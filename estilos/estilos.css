@@ -1,0 +1,112 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    background-color:rgba(135, 188, 168, 0.589);
+
+}
+
+h1{
+    font-size: 30px;
+    font-weight: 100;
+}
+
+@media(min-width: 1146px){
+    h1{
+        font-family: cursive;
+
+    }
+
+    .tabla{
+        width: 80%;
+        border-collapse: collapse;
+        border: 3px solid black; /*solid linea continua*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    th{
+        background-color:mediumpurple;
+        color: white;
+        border: 2px solid;
+    }
+    
+
+    td{
+        padding: 10px;
+        text-align: center;
+        border: 2px solid rgb(255, 255, 255);
+    }
+
+    tr:nth-child(odd){/*odd es impar y even es par*/
+        background-color: rgb(164, 255, 150);
+    }
+
+    tr:nth-child(even){/*odd es impar y even es par*/
+        background-color: rgb(255, 128, 223);
+        color: white;
+    }
+
+    .descripcion{
+        width: 40%;
+    
+    }
+
+    .contenedor{
+        display: none;
+
+    }
+}
+
+@media(min-width: 300px) and (max-width:1145px){
+    body{
+        background-color: addrgba(40, 178, 178, 0.549);
+        
+    }
+
+    h1{
+        text-align: center;
+        align-content: center;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+    .tarjetas{
+        width: 500px;
+        margin-top: 10px;
+        border: 3px solid rgb(140, 0, 0);
+        text-align: justify;
+        margin-left: 30px;
+        margin-right: 30px;
+        background-color:indianred;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .p{
+        width: 50%;
+    }
+
+    .contenedor{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .idperso{
+        background-color: darkred;
+        color: white;
+        border: 4px solid darkred;
+        width: 99%;
+        text-align: center;
+    }
+
+    .tabla{
+        display: none;
+    }
+}
